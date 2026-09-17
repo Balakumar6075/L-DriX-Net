@@ -1,0 +1,181 @@
+# ==============================================================================
+# L-DriX-Net .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Python & Bytecode Caches
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ------------------------------------------------------------------------------
+# Virtual Environments
+# ------------------------------------------------------------------------------
+venv/
+venv*/
+.venv/
+env/
+env*/
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------------------------
+# Datasets & Large Data Files
+# ------------------------------------------------------------------------------
+dataset/
+datasets/
+data/
+Subject*_data/
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
+*.gz
+
+# ------------------------------------------------------------------------------
+# Model Weights & Checkpoints (Heavy Binaries)
+# ------------------------------------------------------------------------------
+checkpoints/
+saved_models/
+weights/
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.weights
+*.bin
+
+# Exception: keep bundled lightweight inference models (e.g. OpenCV YuNet)
+!backend/models/*.onnx
+!models/*.onnx
+
+# ------------------------------------------------------------------------------
+# Project Generated Outputs & Analysis Artifacts
+# ------------------------------------------------------------------------------
+outputs/
+behavior_candidates/
+state_candidate_images/
+real_driver_state_analysis.csv
+temporal_window_features.csv
+training_curve.png
+temporal_sequence_preview.jpg
+
+# Backend detection test output visualizations
+backend/detection/*_test.png
+
+# ------------------------------------------------------------------------------
+# Development Backups & Temp Files
+# ------------------------------------------------------------------------------
+backup_before_real_output/
+*_backup.py
+*_backup.*
+*.bak
+*.tmp
+*.temp
+*~
+
+# ------------------------------------------------------------------------------
+# Frontend (Node / React / Vite)
+# ------------------------------------------------------------------------------
+node_modules/
+**/node_modules/
+frontend/dist/
+**/dist/
+frontend/dist-ssr/
+**/dist-ssr/
+.vite/
+.vite-temp/
+*.local
+
+# Node / Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------------------------------------------
+# Logs & Training Telemetry
+# ------------------------------------------------------------------------------
+logs/
+*.log
+runs/
+lightning_logs/
+wandb/
+.tensorboard/
+
+# ------------------------------------------------------------------------------
+# Jupyter Notebooks
+# ------------------------------------------------------------------------------
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# ------------------------------------------------------------------------------
+# Unit Tests & Coverage
+# ------------------------------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ------------------------------------------------------------------------------
+# Environment Variables & Secrets
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# ------------------------------------------------------------------------------
+# IDE & Operating System Files
+# ------------------------------------------------------------------------------
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*

@@ -1,0 +1,48 @@
+/* ============================================================
+   L-DriX-Net Global Styles
+   ============================================================ */
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+html {
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+
+  background: #f5f7fb;
+}
+
+body {
+  min-width: 320px;
+
+  background: #f5f7fb;
+
+  color: #172033;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+::selection {
+  background: #dbeafe;
+  color: #1e3a8a;
+}
