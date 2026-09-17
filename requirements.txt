@@ -1,0 +1,25 @@
+# ==============================================================================
+# L-DriX-Net Python Dependencies
+# ==============================================================================
+
+# PyTorch and Vision
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Computer Vision & Image Processing
+opencv-python>=4.8.0
+pillow>=9.5.0
+
+# Numerical & Data Science
+numpy>=1.24.0
+matplotlib>=3.7.0
+
+# Backend Web Framework & Server
+fastapi>=0.100.0
+uvicorn[standard]>=0.23.0
+python-multipart>=0.0.6
+pydantic>=2.0.0
+
+# Progress Bars & Configuration
+tqdm>=4.65.0
+pyyaml>=6.0
