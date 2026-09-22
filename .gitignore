@@ -46,6 +46,8 @@ venv.bak/
 dataset/
 datasets/
 data/
+custom_dataset/
+backend/eye_state_dataset/
 Subject*_data/
 *.tar
 *.tar.gz
